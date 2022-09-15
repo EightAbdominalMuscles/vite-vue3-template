@@ -1,5 +1,7 @@
 ## 框架说明
+
 ## 工程
+
 ### 说明
 
 defineConfig 获得代码提示支持
@@ -38,6 +40,7 @@ import.meta.globEager vite 新增 https://cn.vitejs.dev/guide/features.html#glob
   - stylelint-config-standard
   - stylelint-order
 - prettier
+
   - stylelint-config-prettier
   - eslint-plugin-prettier
 
@@ -56,8 +59,8 @@ import.meta.globEager vite 新增 https://cn.vitejs.dev/guide/features.html#glob
 - 基本布局 ✅
 - 动态导航侧边栏 ✅
 - 动态导航面包屑 ✅
-- 路由和菜单✅
-- 权限管理✅
+- 路由和菜单 ✅
+- 权限管理 ✅
   - 菜单权限
     - 在 router.beforeEach
     - 循环菜单时验证

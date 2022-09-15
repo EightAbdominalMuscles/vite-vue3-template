@@ -33,7 +33,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,tsx,vue,ts}": [
-      "prettier --write .", "eslint --fix"
+      "prettier --write .",
+      "eslint --fix"
     ]
   },
   "devDependencies": {
