@@ -14,7 +14,7 @@ import directive from './directive' // directive
 import 'normalize.css'
 //! 数据mork 联调接口时请关闭指定mock   [如果想mock 和 接口都想使用的话,先用接口登陆,获取token放在cookie中]         start
 import './mock'
-//! 数据mork 联调接口时请关闭指定mock   [如果想mock 和 接口都想使用的话,先用接口登陆,获取token放在cookie中]            end
+//! 数据mork 联调接口时请关闭指定mock   [如果想mock 和 接口都想使用的话,先用接口登陆,获取token放在cookie中]         end
 // 注册指令
 import plugins from './plugins' // plugins
 import { download } from '@/utils/request'
@@ -63,7 +63,6 @@ app.config.globalProperties.selectDictLabels = selectDictLabels
 
 // 全局组件挂载
 app.component('DictTag', DictTag)
-// eslint-disable-next-line vue/multi-word-component-names
 app.component('Pagination', Pagination)
 app.component('TreeSelect', TreeSelect)
 app.component('FileUpload', FileUpload)
