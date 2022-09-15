@@ -1,9 +1,9 @@
 <template>
-   <i-frame v-model:src="url"></i-frame>
+  <i-frame v-model:src="url"></i-frame>
 </template>
 
-<script setup>
+<script setup name="MyIframe">
 import iFrame from '@/components/iFrame'
-
-const url = ref(import.meta.env.VITE_APP_BASE_API + "/swagger-ui/index.html")
+import { ref } from 'vue'
+const url = ref('https://www.baidu.com')
 </script>

@@ -4,8 +4,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 // import svgLoader from 'vite-svg-loader'
-// 支持自动按需导入
-import createAutoImport from './plugin/auto-import.js'
 // 让vue脚本设置语法支持name属性
 import createSetupExtend from './plugin/setup-extend'
 import viteEslint from 'vite-plugin-eslint'
@@ -15,7 +13,6 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    createAutoImport(),
     createSetupExtend(),
     viteEslint({
       failOnError: false

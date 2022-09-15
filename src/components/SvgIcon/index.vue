@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { computed, defineComponent } from 'vue'
 export default defineComponent({
   props: {
     iconClass: {
@@ -18,7 +19,7 @@ export default defineComponent({
     color: {
       type: String,
       default: ''
-    },
+    }
   },
   setup(props) {
     return {

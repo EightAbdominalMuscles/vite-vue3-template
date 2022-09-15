@@ -16,7 +16,7 @@
 
 <script setup name="pagination">
 import { scrollTo } from '@/utils/scroll-to'
-
+import { computed } from 'vue'
 const props = defineProps({
   total: {
     required: true,
@@ -59,7 +59,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits()
+const emit = defineEmits([])
 const currentPage = computed({
   get() {
     return props.page

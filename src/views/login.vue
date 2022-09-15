@@ -81,12 +81,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup name="login">
 import { getCodeImg } from '@/api/login'
 import Cookies from 'js-cookie'
 import { encrypt, decrypt } from '@/utils/jsencrypt'
 import useUserStore from '@/store/modules/user'
-
+import { ref, getCurrentInstance } from 'vue'
+import { useRouter } from 'vue-router'
 const userStore = useUserStore()
 const router = useRouter()
 const { proxy } = getCurrentInstance()

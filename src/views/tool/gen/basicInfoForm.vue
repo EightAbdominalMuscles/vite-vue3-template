@@ -1,6 +1,6 @@
 <template>
   <el-form ref="basicInfoForm" :model="info" :rules="rules" label-width="150px">
-    <el-row>
+    <!-- <el-row>
       <el-col :span="12">
         <el-form-item label="表名称" prop="tableName">
           <el-input placeholder="请输入仓库名称" v-model="info.tableName" />
@@ -26,23 +26,24 @@
           <el-input type="textarea" :rows="3" v-model="info.remark"></el-input>
         </el-form-item>
       </el-col>
-    </el-row>
+    </el-row> -->
   </el-form>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 defineProps({
   info: {
     type: Object,
     default: null
   }
-});
+})
 
 // 表单校验
 const rules = ref({
-  tableName: [{ required: true, message: "请输入表名称", trigger: "blur" }],
-  tableComment: [{ required: true, message: "请输入表描述", trigger: "blur" }],
-  className: [{ required: true, message: "请输入实体类名称", trigger: "blur" }],
-  functionAuthor: [{ required: true, message: "请输入作者", trigger: "blur" }]
-});
+  tableName: [{ required: true, message: '请输入表名称', trigger: 'blur' }],
+  tableComment: [{ required: true, message: '请输入表描述', trigger: 'blur' }],
+  className: [{ required: true, message: '请输入实体类名称', trigger: 'blur' }],
+  functionAuthor: [{ required: true, message: '请输入作者', trigger: 'blur' }]
+})
 </script>

@@ -7,7 +7,8 @@
           :key="item.value"
           :index="index"
           :class="item.elTagClass"
-        >{{ item.label }}</span>
+          >{{ item.label }}</span
+        >
         <el-tag
           v-else
           :disable-transitions="true"
@@ -15,31 +16,32 @@
           :index="index"
           :type="item.elTagType === 'primary' ? '' : item.elTagType"
           :class="item.elTagClass"
-        >{{ item.label }}</el-tag>
+          >{{ item.label }}</el-tag
+        >
       </template>
     </template>
   </div>
 </template>
 
-<script setup>
+<script setup name="DictTag">
+import { computed } from 'vue'
 const props = defineProps({
   // 数据
   options: {
     type: Array,
-    default: null,
+    default: null
   },
   // 当前的值
-  value: [Number, String, Array],
+  value: [Number, String, Array]
 })
 
 const values = computed(() => {
   if (props.value !== null && typeof props.value !== 'undefined') {
-    return Array.isArray(props.value) ? props.value : [String(props.value)];
+    return Array.isArray(props.value) ? props.value : [String(props.value)]
   } else {
-    return [];
+    return []
   }
 })
-
 </script>
 
 <style scoped>

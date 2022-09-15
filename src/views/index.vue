@@ -1,11 +1,8 @@
 <template>
-  <div class="app-container home">
-    后台管理框架
-  </div>
+  <div class="app-container home">后台管理框架</div>
 </template>
 
-<script setup name="Index">
-</script>
+<script setup name="Homeb"></script>
 
 <style scoped lang="scss">
 .home {
@@ -13,4 +10,3 @@
   font-weight: 500;
 }
 </style>
-
