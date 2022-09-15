@@ -12,7 +12,9 @@ import store from './store'
 import router from './router'
 import directive from './directive' // directive
 import 'normalize.css'
-
+//! 数据mork 联调接口时请关闭指定mock   [如果想mock 和 接口都想使用的话,先用接口登陆,获取token放在cookie中]         start
+import './mock'
+//! 数据mork 联调接口时请关闭指定mock   [如果想mock 和 接口都想使用的话,先用接口登陆,获取token放在cookie中]            end
 // 注册指令
 import plugins from './plugins' // plugins
 import { download } from '@/utils/request'
@@ -24,7 +26,6 @@ import elementIcons from '@/components/SvgIcon/svgicon'
 
 import './permission' // permission control
 
-import { useDict } from '@/utils/dict'
 import {
   parseTime,
   resetForm,
@@ -52,7 +53,6 @@ import DictTag from '@/components/DictTag'
 const app = createApp(App)
 
 // 全局方法挂载
-app.config.globalProperties.useDict = useDict
 app.config.globalProperties.download = download
 app.config.globalProperties.parseTime = parseTime
 app.config.globalProperties.resetForm = resetForm

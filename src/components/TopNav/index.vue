@@ -47,8 +47,8 @@ import { useRouter, useRoute } from 'vue-router'
 const visibleNumber = ref(null)
 // 当前激活菜单的 index
 const currentIndex = ref(null)
-// 隐藏侧边栏路由
-const hideList = ['/index', '/user/profile']
+//! 隐藏侧边栏路由 , '/user/profile'
+const hideList = ['/index']
 
 const appStore = useAppStore()
 const settingsStore = useSettingsStore()

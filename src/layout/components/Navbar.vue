@@ -36,9 +36,9 @@
           </div>
           <template #dropdown>
             <el-dropdown-menu>
-              <router-link to="/user/profile">
-                <el-dropdown-item>个人中心</el-dropdown-item>
-              </router-link>
+              <!-- <router-link to="/user/profile"> -->
+              <el-dropdown-item command="profile">个人中心</el-dropdown-item>
+              <!-- </router-link> -->
               <el-dropdown-item divided command="logout">
                 <span>退出登录</span>
               </el-dropdown-item>
@@ -51,7 +51,7 @@
 </template>
 
 <script setup name="Navbar">
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox, ElMessage } from 'element-plus'
 import Breadcrumb from '@/components/Breadcrumb'
 import TopNav from '@/components/TopNav'
 import Hamburger from '@/components/Hamburger'
@@ -73,6 +73,13 @@ function handleCommand(command) {
   switch (command) {
     case 'logout':
       logout()
+      break
+    case 'profile':
+      ElMessage({
+        message: '开发中......',
+        type: 'info',
+        duration: 5 * 1000
+      })
       break
     default:
       break
