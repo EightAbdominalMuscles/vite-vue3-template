@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container home">后台管理框架11</div>
+  <div class="app-container home">后台管理框架</div>
 </template>
 
 <script setup name="Homeb"></script>

@@ -15,7 +15,6 @@ module.exports = {
     customScope: '请输入修改的范围（可选）',
     subject: '请简要描述提交（必填）',
     body: '请输入详细描述（可选）',
-    footer: '请选择要关闭的issue（可选）',
     confirmCommit: '确认要使用以上信息提交？（y/n）'
   },
   skip: ['body', 'footer'],
