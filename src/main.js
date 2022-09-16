@@ -69,20 +69,16 @@ app.component('FileUpload', FileUpload)
 app.component('ImageUpload', ImageUpload)
 app.component('ImagePreview', ImagePreview)
 app.component('RightToolbar', RightToolbar)
-
-app.use(router)
-app.use(store)
-app.use(plugins)
-app.use(elementIcons)
 app.component('svg-icon', SvgIcon)
-
-directive(app)
-
-// 使用element-plus 并且设置全局的大小
-app.use(ElementPlus, {
-  locale: locale,
-  // 支持 large、default、small
-  size: Cookies.get('size') || 'default'
-})
-
-app.mount('#app')
+app
+  .use(router)
+  .use(store)
+  .use(plugins)
+  .use(elementIcons)
+  .use(ElementPlus, {
+    locale: locale,
+    // 支持 large、default、small
+    size: Cookies.get('size') || 'default'
+  })
+  .use(directive)
+  .mount('#app')

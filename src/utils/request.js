@@ -127,7 +127,8 @@ export function download(url, params, filename) {
         }
       ],
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      responseType: 'blob'
+      responseType: 'blob',
+      timeout: 20000
     })
     .then(async (data) => {
       const isLogin = await blobValidate(data)
