@@ -1,5 +1,7 @@
 ## 使用说明
+
 ## 框架说明
+
 ### 功能处理
 
 - 基本布局 ✅
@@ -15,6 +17,7 @@
   - 数据权限（后台）无需处理
 - 打包构建 ✅
 - 换肤 ✅
+
 ### 插件
 
 - @vitejs/plugin-vue-jsx 解析 jsx(只适用于单文件中使用 jsx)
@@ -59,5 +62,3 @@
 - vite-plugin-compression 支持 gzip 压缩
 - rollup-plugin-visualizer 生成打包分析
 - vite-plugin-imagemin 图片压缩
-
-
